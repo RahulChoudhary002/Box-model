@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(0deg,
+            #FF5733, #FFC300, #FF5733,
+            #33FF57, #33D1FF, #3357FF,
+            #8333FF, #FF33A8, #FF5733,
+            #FFC300, #FFE033, #33FF57,
+            #33FFC3, #33D1FF, #3357FF,
+            #FF5733, #FF33A8, #FF3357,
+            #FF5733, #FFC300, #FF33D1,
+            #8333FF, #3357FF, #33D1FF,
+            #33FFC3, #33FF57, #FFE033,
+            #FFC300, #FF5733, #FF3357);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s infinite;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Box Model Section */
+.box-demo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    border-left: 5px solid #FFC300;
+    border-right: 5px solid #33FF57;
+    border-top: 5px solid #33D1FF;
+    border-bottom: 5px solid #8333FF;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.box p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 100%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
